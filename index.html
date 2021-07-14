@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!-- THE DOCTYPE tells the browser what type of webpage to render, the doctype used in this website is HTML5 which is the most recent HTML. -->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio Demos</title>
+	<!-- THE TITLE element is the name of the page, it is also visible in the browser tab. Its always good practice to give each page an appropriate title. -->
+<!-- 	<meta name="description" content="A sample website, nothin fancy">
+      <meta http-equiv="author" content="Francisco Campos Arias">
+      <meta name="keywords" content="html, css, web, design, sample, practice"> -->
+      <!-- These are META TAGS, they're used to describe the website, this information is read mainly by search engines like GOOGLE, YAHOO, ETC... -->	
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<!-- <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script> -->
+</head>
+<body>
+	<div class="container">
+<!-- THIS ACTUAL CONTENT BEGINS HERE...this is called a comment. which can only be seen when viewing the source code. This text CANNOT be seen by the browser. Its helpful when you need to place notes, comments or reminders in your code -->
+	<header>
+		<div class="header">
+			<h1>Audio Demos for "Mandarin Singing Voice Synthesis with a Phonology-based Duration Model"</h1>
+		</div>
+	</header>
+	<!-- END HEADER | the header element in new to HTML5 -->
+<!-- 		<div class="main">
+			<h2>This is just an example with some web content. This is the Hero Unit.</h2>
+		</div> -->
+		<div class="feature">
+			<!-- <h3>Featured Content 1</h3> -->
+			<p><b>Authors: </b>Fu-Rong Yang, Yin-Ping Cho, Yi-Hsuan Yang, Da-Yi Wu, Shan-Hung Wu, and Yi-Wen Liu</p>
+			<!-- LOREM IPSUM is universally used. Lorem ipsum is dummy text, it does't really mean anything. Its used to fill space or for mockups. -->
+			<p><b>Abstract: </b>Singing voice synthesis (SVS) systems are built to generate human-like voice signals from lyrics and the corresponding musical scores. In most SVS systems, a neural network-based auxiliary duration model is employed to control the duration of phonemes. In this paper, a rule-based algorithm inspired by Mandarin phonology is proposed for the duration modeling in Mandarin SVS. Specifically, the algorithm infers the duration of an ``initial'' consonant by looking up syllables in an existing training set that begin with the same consonant and have similar note lengths, and then computing the average consonant duration. Around this, we employ a combination of Tacotron2 and Parallel WaveGAN as the backbone of our SVS system for their favorable data efficiency on small datasets. Experimental results show that the singing voice synthesized by the proposed duration model is more expressive than that of a learning-based model. Moreover, since Mandarin is a tonal language, the inclusion of tonality consideration further enhances the naturalness of the generated voices. </p>
+		</div>
+		
+		<hr>
+
+		<div class="">
+			<p>The following audios are the subjective evaluation samples for our APSIPA2021 paper.</p>
+			<p><b>Note: </b>Please ensure your web browser supports wav audio format. The numbers in the table specify the first browser version that fully supports the audio element.</p>
+			<figure>
+			    <img src="img/browser.png"
+			         alt="web browser supports"
+			         style="width:55%">
+			</figure>
+		</div>
+
+		<div class="feature">
+			<h3>Demos for the Subjective Evaluation of Singing Voice</h3>
+			<table border=1>
+
+			<!-- row 1 -->
+			<tr>
+			<td></td>
+			<td align="center"><b><i>Song 1 </i></b>(tempo=120 BPM)</td>
+			<td align="center"><b><i>Song 2 </i></b>(tempo=80 BPM)</td>
+			</tr>
+
+			<!-- row 2 -->
+			<tr>
+			<td align="center"><b>Reference</b></td>
+			<td>
+				<audio controls>
+				  <source src="MOS_037/ref.wav" type="audio/wav">
+				</audio>
+			</td>
+			<td>
+				<audio controls>
+				  <source src="MOS_143/ref.wav" type="audio/wav">
+				</audio>
+			</td>
+			</tr>
+
+			<!-- row 3 -->
+			<tr>
+			<td align="center"><b>Model 1</b></td>
+			<td>
+				<audio controls>
+				  <source src="MOS_037/model1.wav" type="audio/wav">
+				</audio>
+			</td>
+			<td>
+				<audio controls>
+				  <source src="MOS_143/model1.wav" type="audio/wav">
+				</audio>
+			</td>
+			</tr>
+
+			<!-- row 4 -->
+			<tr>
+			<td align="center"><b>Model 2</b></td>
+			<td>
+				<audio controls>
+				  <source src="MOS_037/model2.wav" type="audio/wav">
+				</audio>
+			</td>
+			<td>
+				<audio controls>
+				  <source src="MOS_143/model2.wav" type="audio/wav">
+				</audio>
+			</td>
+			</tr>
+
+				<!-- row 5 -->
+			<tr>
+			<td align="center"><b>Model 3</b></td>
+			<td>
+				<audio controls>
+				  <source src="MOS_037/model3.wav" type="audio/wav">
+				</audio>
+			</td>
+			<td>
+				<audio controls>
+				  <source src="MOS_143/model3.wav" type="audio/wav">
+				</audio>
+			</td>
+			</tr>
+
+			<!-- row 6 -->
+			<tr>
+			<td align="center"><b>Model 4</b></td>
+			<td>
+				<audio controls>
+				  <source src="MOS_037/model4.wav" type="audio/wav">
+				</audio>
+			</td>
+			<td>
+				<audio controls>
+				  <source src="MOS_143/model4.wav" type="audio/wav">
+				</audio>
+			</td>
+			</tr>
+
+			<!-- row 7 -->
+			<tr>
+			<td align="center"><b>Model 5</b></td>
+			<td>
+				<audio controls>
+				  <source src="MOS_037/model5.wav" type="audio/wav">
+				</audio>
+			</td>
+			<td>
+				<audio controls>
+				  <source src="MOS_143/model5.wav" type="audio/wav">
+				</audio>
+			</td>
+			</tr>
+			</table>
+		</div>
+	<footer>
+		&copy;Copyright by Fu­-Rong Yang, 2021, All Right Reserved.
+	</footer>
+	<!-- END FOOTER | the footer element is also new to HTML5 -->
+	</div>
+</body>
+</html>
